@@ -32,49 +32,22 @@ var CONFIG = {
 
 window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 6.3.0"></head><body><div class="container" id="container"><header class="header" id="header"><div class="header-inner"><nav class="header-nav header-nav--fixed"><div class="header-nav-inner"><div class="header-nav-menubtn"><i class="fas fa-bars"></i></div><div class="header-nav-menu"><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/"><span class="header-nav-menu-item__icon"><i class="fas fa-home"></i></span><span class="header-nav-menu-item__text">Home</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/archives/"><span class="header-nav-menu-item__icon"><i class="fas fa-folder-open"></i></span><span class="header-nav-menu-item__text">Archives</span></a></div></div><div class="header-nav-mode"><div class="mode"><div class="mode-track"><span class="mode-track-moon"></span><span class="mode-track-sun"></span></div><div class="mode-thumb"></div></div></div></div></nav><div class="header-banner"><div class="header-banner-info"><div class="header-banner-info__title">Welcome to YY's blog</div></div></div></div></header><main class="main" id="main"><div class="main-inner"><div class="content-wrap" id="content-wrap"><div class="content content-home" id="content"><section class="postlist"><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/2023/07/20/p1002/">p1002</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">Created</span><span class="post-meta-item__value">2023-07-20</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">Updated</span><span class="post-meta-item__value">2023-07-20</span></span></div></header><div class="post-body"><div class="post-excerpt"><p><img src="/2023/07/20/p1002/1.png"><br><img src="/2023/07/20/p1002/2.png"></p>
 
-        <h1 id="NOIP2002-普及组-过河卒">
-          <a href="#NOIP2002-普及组-过河卒" class="heading-link"><i class="fas fa-link"></i></a><a href="#NOIP2002-普及组-过河卒" class="headerlink" title="[NOIP2002 普及组] 过河卒"></a>[NOIP2002 普及组] 过河卒</h1>
-      
-        <h2 id="题目描述">
-          <a href="#题目描述" class="heading-link"><i class="fas fa-link"></i></a><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2>
-      <p>棋盘上 $A$ 点有一个过河卒，需要走到目标 $B$ 点。卒行走的规则：可以向下、或者向右。同时在棋盘上 $C$ 点有一个对方的马，该马所在的点和所有跳跃一步可达的点称为对方马的控制点。因此称之为“马拦过河卒”。</p>
-<p>棋盘用坐标表示，$A$ 点 $(0, 0)$、$B$ 点 $(n, m)$，同样马的位置坐标是需要给出的。</p>
-<p><img src="https://cdn.luogu.com.cn/upload/image_hosting/f3wwgqj6.png"></p>
-<p>现在要求你计算出卒从 $A$ 点能够到达 $B$ 点的路径的条数，假设马的位置是固定不动的，并不是卒走一步马走一步。</p>
-
-        <h2 id="输入格式">
-          <a href="#输入格式" class="heading-link"><i class="fas fa-link"></i></a><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h2>
-      <p>一行四个正整数，分别表示 $B$ 点坐标和马的坐标。</p>
-
-        <h2 id="输出格式">
-          <a href="#输出格式" class="heading-link"><i class="fas fa-link"></i></a><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h2>
-      <p>一个整数，表示所有的路径条数。</p>
-
-        <h2 id="样例-1">
-          <a href="#样例-1" class="heading-link"><i class="fas fa-link"></i></a><a href="#样例-1" class="headerlink" title="样例 #1"></a>样例 #1</h2>
-      
-        <h3 id="样例输入-1">
-          <a href="#样例输入-1" class="heading-link"><i class="fas fa-link"></i></a><a href="#样例输入-1" class="headerlink" title="样例输入 #1"></a>样例输入 #1</h3>
-      <figure class="highlight plaintext"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">6 6 3 3</span><br></pre></td></tr></table></div></figure>
-
-
-        <h3 id="样例输出-1">
-          <a href="#样例输出-1" class="heading-link"><i class="fas fa-link"></i></a><a href="#样例输出-1" class="headerlink" title="样例输出 #1"></a>样例输出 #1</h3>
-      <figure class="highlight plaintext"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">6</span><br></pre></td></tr></table></div></figure>
-
-
-        <h2 id="提示">
-          <a href="#提示" class="heading-link"><i class="fas fa-link"></i></a><a href="#提示" class="headerlink" title="提示"></a>提示</h2>
-      <p>对于 $100 %$ 的数据，$1 \le n, m \le 20$，$0 \le$ 马的坐标 $\le 20$。</p>
-<p><strong>【题目来源】</strong></p>
-<p>NOIP 2002 普及组第四题</p>
-
         <h1 id="题目分析">
           <a href="#题目分析" class="heading-link"><i class="fas fa-link"></i></a><a href="#题目分析" class="headerlink" title="题目分析"></a>题目分析</h1>
       
-        <h2 id="数据存储结构">
-          <a href="#数据存储结构" class="heading-link"><i class="fas fa-link"></i></a><a href="#数据存储结构" class="headerlink" title="数据存储结构"></a>数据存储结构</h2>
-      </div></div></article><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/2023/07/18/p1012%E6%8B%BC%E6%95%B0/">p1012拼数</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">Created</span><span class="post-meta-item__value">2023-07-18</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">Updated</span><span class="post-meta-item__value">2023-07-18</span></span></div></header><div class="post-body"><div class="post-excerpt"><p><img src="/2023/07/18/p1012%E6%8B%BC%E6%95%B0/p1012.png"></p>
+        <h2 id="数据存储">
+          <a href="#数据存储" class="heading-link"><i class="fas fa-link"></i></a><a href="#数据存储" class="headerlink" title="数据存储"></a>数据存储</h2>
+      <p>通过分析题目可知，我们需要在方格图中找出路径数量，因此我们可以考虑利用二维数组进行数据存储，进而表示每一个点坐标。</p>
+<figure class="highlight plaintext"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">long long hash [21][21];</span><br></pre></td></tr></table></div></figure>
+
+        <h2 id="算法实现">
+          <a href="#算法实现" class="heading-link"><i class="fas fa-link"></i></a><a href="#算法实现" class="headerlink" title="算法实现"></a>算法实现</h2>
+      <p>首先我们将马走过的点设为0，卒没走过的点设为-1，原理如下图所示<br><img src="/2023/07/20/p1002/3.png" alt="算法原理"></p>
+<ul>
+<li>递推实现<figure class="highlight plaintext"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">for(int i = 0; i &lt;= x; i++) &#123;</span><br><span class="line">        for(int j = 0; j &lt;= y; j++) &#123;</span><br><span class="line">            if(!((abs(i - m) == 2 &amp;&amp; abs(j - n) == 1) || (abs(i - m) == 1 &amp;&amp; abs(j - n) == 2) || (i == m &amp;&amp; n == j))) &#123;</span><br><span class="line">                if(i == 0 &amp;&amp; j == 0) &#123;</span><br><span class="line">                    map[0][0] = 1;</span><br><span class="line">                &#125; else if(i == 0 &amp;&amp; j &gt; 0) &#123;</span><br><span class="line">                    map[0][j] = map[0][j - 1];</span><br><span class="line">                &#125; else if(i &gt; 0 &amp;&amp; j == 0) &#123;</span><br><span class="line">                    map[i][0] = map[i - 1][0];</span><br><span class="line">                &#125; else &#123;</span><br><span class="line">                    map[i][j] = map[i - 1][j] + map[i][j - 1];   </span><br><span class="line">                &#125;             </span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></div></figure></li>
+<li>递归实现（反过来寻找）<figure class="highlight plaintext"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">long long shortest_path (int x, int y, int m, int n, long long (*hash)[21]) &#123;</span><br><span class="line">    if(hash[x][y] == -1) &#123;</span><br><span class="line">    	</span><br><span class="line">        if((abs(x - m) == 2 &amp;&amp; abs(y - n) == 1) || (abs(x - m) == 1 &amp;&amp; abs(y - n) == 2) || (x == m &amp;&amp; y == n)) &#123;</span><br><span class="line">            hash[x][y] = 0;                </span><br><span class="line">        &#125; else if(x == 0 &amp;&amp; y == 0) &#123;</span><br><span class="line">            hash[x][y] = 1; </span><br><span class="line">        &#125; else &#123;</span><br><span class="line">             hash[x][y] = ((x &gt; 0) ? shortest_path(x - 1, y, m, n, hash) : 0) + ((y &gt; 0) ? shortest_path(x, y - 1, m, n, hash) : 0);            </span><br><span class="line">        &#125;</span><br><span class="line">    &#125; </span><br><span class="line">    return hash[x][y];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></div></figure></li>
+</ul>
+</div></div></article><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/2023/07/18/p1012%E6%8B%BC%E6%95%B0/">p1012拼数</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">Created</span><span class="post-meta-item__value">2023-07-18</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">Updated</span><span class="post-meta-item__value">2023-07-18</span></span></div></header><div class="post-body"><div class="post-excerpt"><p><img src="/2023/07/18/p1012%E6%8B%BC%E6%95%B0/p1012.png"></p>
 
         <h1 id="题目分析">
           <a href="#题目分析" class="heading-link"><i class="fas fa-link"></i></a><a href="#题目分析" class="headerlink" title="题目分析"></a>题目分析</h1>
