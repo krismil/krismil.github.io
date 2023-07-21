@@ -30,7 +30,43 @@ var CONFIG = {
   sourcePath: {"js":"js","css":"css","images":"images"},
 };
 
-window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 6.3.0"></head><body><div class="container" id="container"><header class="header" id="header"><div class="header-inner"><nav class="header-nav header-nav--fixed"><div class="header-nav-inner"><div class="header-nav-menubtn"><i class="fas fa-bars"></i></div><div class="header-nav-menu"><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/"><span class="header-nav-menu-item__icon"><i class="fas fa-home"></i></span><span class="header-nav-menu-item__text">Home</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/archives/"><span class="header-nav-menu-item__icon"><i class="fas fa-folder-open"></i></span><span class="header-nav-menu-item__text">Archives</span></a></div></div><div class="header-nav-mode"><div class="mode"><div class="mode-track"><span class="mode-track-moon"></span><span class="mode-track-sun"></span></div><div class="mode-thumb"></div></div></div></div></nav><div class="header-banner"><div class="header-banner-info"><div class="header-banner-info__title">Welcome to YY's blog</div></div></div></div></header><main class="main" id="main"><div class="main-inner"><div class="content-wrap" id="content-wrap"><div class="content content-home" id="content"><section class="postlist"><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/2023/07/20/p1002/">p1002</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">Created</span><span class="post-meta-item__value">2023-07-20</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">Updated</span><span class="post-meta-item__value">2023-07-20</span></span></div></header><div class="post-body"><div class="post-excerpt"><p><img src="/2023/07/20/p1002/1.png"><br><img src="/2023/07/20/p1002/2.png"></p>
+window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 6.3.0"></head><body><div class="container" id="container"><header class="header" id="header"><div class="header-inner"><nav class="header-nav header-nav--fixed"><div class="header-nav-inner"><div class="header-nav-menubtn"><i class="fas fa-bars"></i></div><div class="header-nav-menu"><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/"><span class="header-nav-menu-item__icon"><i class="fas fa-home"></i></span><span class="header-nav-menu-item__text">Home</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/archives/"><span class="header-nav-menu-item__icon"><i class="fas fa-folder-open"></i></span><span class="header-nav-menu-item__text">Archives</span></a></div></div><div class="header-nav-mode"><div class="mode"><div class="mode-track"><span class="mode-track-moon"></span><span class="mode-track-sun"></span></div><div class="mode-thumb"></div></div></div></div></nav><div class="header-banner"><div class="header-banner-info"><div class="header-banner-info__title">Welcome to YY's blog</div></div></div></div></header><main class="main" id="main"><div class="main-inner"><div class="content-wrap" id="content-wrap"><div class="content content-home" id="content"><section class="postlist"><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/2023/07/20/p1002/">p1002</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">Created</span><span class="post-meta-item__value">2023-07-20</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">Updated</span><span class="post-meta-item__value">2023-07-21</span></span></div></header><div class="post-body"><div class="post-excerpt">
+        <h1 id="NOIP2002-普及组-过河卒">
+          <a href="#NOIP2002-普及组-过河卒" class="heading-link"><i class="fas fa-link"></i></a><a href="#NOIP2002-普及组-过河卒" class="headerlink" title="[NOIP2002 普及组] 过河卒"></a>[NOIP2002 普及组] 过河卒</h1>
+      
+        <h2 id="题目描述">
+          <a href="#题目描述" class="heading-link"><i class="fas fa-link"></i></a><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2>
+      <p>棋盘上 $A$ 点有一个过河卒，需要走到目标 $B$ 点。卒行走的规则：可以向下、或者向右。同时在棋盘上 $C$ 点有一个对方的马，该马所在的点和所有跳跃一步可达的点称为对方马的控制点。因此称之为“马拦过河卒”。</p>
+<p>棋盘用坐标表示，$A$ 点 $(0, 0)$、$B$ 点 $(n, m)$，同样马的位置坐标是需要给出的。</p>
+<p><img src="https://cdn.luogu.com.cn/upload/image_hosting/f3wwgqj6.png"></p>
+<p>现在要求你计算出卒从 $A$ 点能够到达 $B$ 点的路径的条数，假设马的位置是固定不动的，并不是卒走一步马走一步。</p>
+
+        <h2 id="输入格式">
+          <a href="#输入格式" class="heading-link"><i class="fas fa-link"></i></a><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h2>
+      <p>一行四个正整数，分别表示 $B$ 点坐标和马的坐标。</p>
+
+        <h2 id="输出格式">
+          <a href="#输出格式" class="heading-link"><i class="fas fa-link"></i></a><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h2>
+      <p>一个整数，表示所有的路径条数。</p>
+
+        <h2 id="样例-1">
+          <a href="#样例-1" class="heading-link"><i class="fas fa-link"></i></a><a href="#样例-1" class="headerlink" title="样例 #1"></a>样例 #1</h2>
+      
+        <h3 id="样例输入-1">
+          <a href="#样例输入-1" class="heading-link"><i class="fas fa-link"></i></a><a href="#样例输入-1" class="headerlink" title="样例输入 #1"></a>样例输入 #1</h3>
+      <figure class="highlight plaintext"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">6 6 3 3</span><br></pre></td></tr></table></div></figure>
+
+
+        <h3 id="样例输出-1">
+          <a href="#样例输出-1" class="heading-link"><i class="fas fa-link"></i></a><a href="#样例输出-1" class="headerlink" title="样例输出 #1"></a>样例输出 #1</h3>
+      <figure class="highlight plaintext"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">6</span><br></pre></td></tr></table></div></figure>
+
+
+        <h2 id="提示">
+          <a href="#提示" class="heading-link"><i class="fas fa-link"></i></a><a href="#提示" class="headerlink" title="提示"></a>提示</h2>
+      <p>对于 $100 %$ 的数据，$1 \le n, m \le 20$，$0 \le$ 马的坐标 $\le 20$。</p>
+<p><strong>【题目来源】</strong></p>
+<p>NOIP 2002 普及组第四题<br><img src="/2023/07/20/p1002/1.png"><br><img src="/2023/07/20/p1002/2.png"></p>
 
         <h1 id="题目分析">
           <a href="#题目分析" class="heading-link"><i class="fas fa-link"></i></a><a href="#题目分析" class="headerlink" title="题目分析"></a>题目分析</h1>
